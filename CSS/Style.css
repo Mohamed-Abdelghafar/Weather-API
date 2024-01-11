@@ -1,0 +1,234 @@
+:root {
+    --main-color:#052a55;
+    --second-color:#323544; /*cards color*/
+    --third-color:#009AD8;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: var(--main-color);
+}
+::-webkit-scrollbar-thumb {
+    background-color: #065888;
+    border-radius: 10px;
+}
+
+* {
+    letter-spacing: 1px;
+}
+::placeholder {
+    color: white;
+}
+.parent img {
+    z-index: -1;
+}
+.logo {
+    mix-blend-mode: screen;
+}
+.navbar {
+    background-color: var(--main-color) !important;
+}
+ul li {
+    margin: 0 20px;
+}
+/*  */
+.search {
+    width: 50%;
+}
+.search input   {
+    outline: none;
+    background-color:transparent ;
+    border: 2px solid white;
+    color: var(--main-color);
+}
+.search input::placeholder   {
+   color: var(--main-color);
+}
+.emailUser {
+    outline: none;
+    background-color:transparent ;
+    border: 2px solid white;
+}
+.search button {
+    background-color:var(--main-color);
+    padding: 10px 45px;
+
+}
+.emailInuput {
+    width: 50%;
+}
+.emailButton {
+    background-color: #0d80ad;
+    padding: 7px 25px;
+}
+/*  */
+.firstCard {
+    background-image: linear-gradient(rgb(247, 247, 247) , rgba(18, 102, 197, 0.692));
+}
+.secondCard {
+    background-image: linear-gradient(rgb(247, 247, 247) , rgba(18, 102, 197, 0.692));
+}
+
+header {
+    background-color: var(--main-color);
+}
+.deg {
+    font-size: 90px;
+    font-weight:700;
+}
+h3{
+    font-size:24px;
+    font-weight:700
+}
+h4{
+    font-size:16px;
+}
+.weatherType{
+    color: white;
+    background-color: var(--main-color);
+    width: fit-content;
+    padding: 10px 25px;
+}
+.nav-link {
+    color: white;
+    transition: 0.5s;
+    border: 1px solid transparent;
+    border-radius: 100px;
+}
+.nav-link:focus {
+    color: white;
+}
+ul li:hover .nav-link  , .navbar-nav .nav-link.active {
+    color: #1AC8EA;
+    border: 1px solid white;
+    border-radius: 100px;
+    transition: 0.5s;
+}
+.navbar-toggler {
+    color : white ;
+    border-color:white ;
+}
+
+.footer {
+    width: fit-content;
+}
+/*  */
+footer{
+    background-image: linear-gradient(to left , rgba(4, 68, 105, 0.822) , var(--main-color));
+
+}
+.footer-content {
+    padding: 0 45px;
+}
+.footer-flex {
+    justify-content:space-around;
+    align-items:center;
+}
+.body {
+    height: calc(100% - 56px);
+}
+
+.iconBox {
+    background-color: var(--main-color);
+    color: white;
+    width: fit-content;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 5px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.iconBox:hover {
+    background-color: white;
+    color: var(--third-color);
+}
+
+/* clock */
+
+.clock {
+    --height:300px;
+    height: var(--height);
+    width: var(--height);
+    background: radial-gradient(circle , rgb(4, 53, 94) , rgb(2, 37, 65));
+    border: 3px solid rgb(255, 255, 255);
+    filter: drop-shadow(0 0 5px rgb(0, 0, 0));
+}
+.number {
+    transform: rotate(calc(30deg * var(--n)));
+    position: absolute;
+    color: white;
+    inset: 8px;
+    text-align: center;
+}
+.number span {
+    transform: rotate(calc(-30deg * var(--n)));
+    display: inline-block;
+}
+.middlePoint {
+    background-color: rgb(255, 255, 255);
+    height: 15px;
+    width: 15px;
+    z-index: 5;
+}
+
+.hoursHand,.minutesHand,.secondsHand {
+    --rotate:0;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%)rotate(calc(var(--rotate) * 1deg));
+    transform-origin: bottom;
+    background-image: linear-gradient(to top , #0f93bb , #077e86);
+    border-radius: 30px;
+}
+.hoursHand{
+    height: 80px;
+    width: 8px;
+}
+.minutesHand{
+    height: 95px;
+    width: 8px;
+    background-color: rgb(107, 5, 5);
+}
+.secondsHand{
+    height: 112px;
+    width: 8px;
+    background-color: rgb(8, 105, 112);
+}
+
+
+/*  */
+form {
+    background-color: rgba(255, 255, 255, 0.205);
+}
+form input , form textarea {
+    outline: none;
+    border: 2px solid rgb(12, 151, 231);
+    transition: 0.5s;
+}
+
+form input:focus , form textarea:focus {
+    border: 2px solid rgb(5, 54, 99);
+}
+form button {
+    background-color: var(--main-color);
+    color: white;
+    transition: 0.4s;
+    font-weight: 600;
+}
+form button:hover {
+    background-color:  #0b708a;
+    
+}
+
+form h1 {
+    font-size: 50px;
+    color: white;
+    text-shadow: 0 0 5px rgb(20, 172, 231);
+}
